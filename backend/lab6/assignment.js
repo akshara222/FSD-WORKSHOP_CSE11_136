@@ -142,7 +142,7 @@ app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`)
 })
 
-app.get("/user/:id", (req, res) => {
+app.get("/userById/:id", (req, res) => {
     try {
         const { id } = req.params;
         const user = array.find((u) => u.id == id);

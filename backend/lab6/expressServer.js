@@ -5,9 +5,10 @@ import cors from 'cors'
 dotenv.config()
 //const port = process.env.PORT || 7000
 
-const port=3000;
+const port=3001;
 const app = express();
 app.use(express.json())
+app.use(cors());
 const array = [
     {
         id: 1,
